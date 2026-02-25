@@ -2,7 +2,7 @@
 """
 Created on Wed Feb 25 09:48:16 2026
 
-@author: AnaghPurandare
+@author: anagh-dot and Claud.ai
 """
 
 # -*- coding: utf-8 -*-
@@ -593,14 +593,15 @@ if __name__ == "__main__":
         print(f"  {i}. {name}")
     print()
 
-    # ── Change this path to your OneDrive / local folder ──────────────────────
+    # ── Change this path to your local folder ──────────────────────
     OUTPUT_DIR = (
-        "C:/Users/AnaghPurandare/OneDrive - Azim Premji Foundation/"
-        "Documents/School Academics/Grade 3/Math Worksheets"
+        "."
+        "."
     )
     generate_all_worksheets(output_dir=OUTPUT_DIR)
 
     print("\nTo compile all PDFs, run from that folder:")
     for name in STUDENT_LIST:
         safe = name.lower().replace(' ', '_')
+
         print(f"  pdflatex grade3_assessment2_{safe}.tex")
